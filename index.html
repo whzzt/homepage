@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenting Zhu's Homepage</title>
+    <!-- Use Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        .container {
+            max-width: 960px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md rounded-b-lg mb-8">
+        <div class="container mx-auto p-6 flex flex-col sm:flex-row items-center justify-between">
+            <div class="flex flex-col sm:flex-row items-center">
+                <!-- Placeholder for Profile Image - replace with your own URL -->
+                <img src="files/photo.jpg" class="w-24 h-24 rounded-full border-4 border-gray-200 shadow-lg mb-4 sm:mb-0 sm:mr-6">
+                <div>
+                    <h1 class="text-3xl font-bold text-center sm:text-left text-gray-900">Zhenting Zhu</h1>
+                    <p class="text-lg text-gray-600 text-center sm:text-left">Ph.D. Student, Computer Science</p>
+                    <p class="text-md text-gray-500 text-center sm:text-left">University of California, Los Angeles</p>
+                </div>
+            </div>
+            <!-- Social and Contact Links -->
+            <div class="mt-4 sm:mt-0 flex space-x-4">
+                <a href="#publications" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">Publications</a>
+                <a href="#awards" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">Awards</a>
+                <a href="#contact" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+
+        <!-- About Section -->
+        <section id="about" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                I'm a second-year Ph.D. student in Computer Science at UCLA, and I'm very fortunate to be part of Professor Harry Xu's research group. My primary research interest lies in building resilient and intelligent systems for modern applications. I focus on key challenges within large-scale distributed platforms, spanning both conventional data center architectures and the specialized infrastructure required for high-performance machine learning. My work specifically investigates how to enhance system resilience, usability, and reliability in these demanding environments.
+            </p>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Selected Honors & Awards</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li><strong class="text-gray-900">Yao Class summa cum laude </strong> Deep learning, reinforcement learning, and generative models.</li>
+                <li><strong class="text-gray-900">Computational Biology:</strong> Genomics, proteomics, and bioinformatics.</li>
+                <li><strong class="text-gray-900">Algorithm Design:</strong> Optimization and graph theory.</li>
+                <li><strong class="text-gray-900">Data Science:</strong> Large-scale data analysis and visualization.</li>
+            </ul>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Publications</h2>
+            <ul class="space-y-6 text-gray-700">
+                <!-- Publication 1 -->
+                <li class="p-4 border border-gray-200 rounded-lg transition-shadow duration-200 hover:shadow-md">
+                    <p class="font-medium text-gray-900">
+                        C. Liu<sup>*</sup>, <b>Zhenting Zhu<sup>*</sup></b>, Q. Li, Y. Xia, Y. Qiao, X. Deng, Y. Lu, T. Xie, H. Cui, Z. Du, H. Xu, C. Wang, "Orthrus: Efficient and Timely Validation of Silent User Data Corruption on the Cloud" <span class="italic">The 31st Symposium on Operating Systems Principles</span>, 2025.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium mt-2 inline-block">View PDF</a>
+                </li>
+                <!-- Publication 2 -->
+                <li class="p-4 border border-gray-200 rounded-lg transition-shadow duration-200 hover:shadow-md">
+                    <p class="font-medium text-gray-900">
+                        Shan Yu, <b>Zhenting Zhu</b>, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu, "VQPy: An Object-oriented Video Query Language" <span class="italic">The Seventh Annual Conference on Machine Learning and Systems</span>, 2024.
+                    </p>
+                    <a href="files/VQPy.pdf" class="text-blue-600 hover:text-blue-800 font-medium mt-2 inline-block">View PDF</a>
+                </li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contact</h2>
+            <div class="space-y-2 text-gray-700">
+                <p><strong class="text-gray-900">Email:</strong> <a href="mailto:whzzt@ucla.edu" class="text-blue-600 hover:underline">whzzt@uc.edu</a></p>
+                <!-- <p><strong class="text-gray-900">Office:</strong> Building 1, Room 101</p>-->
+                <!-- <p><strong class="text-gray-900">Twitter:</strong> <a href="https://twitter.com/your-twitter" class="text-blue-600 hover:underline">@your-twitter</a></p>-->
+                <p><strong class="text-gray-900">GitHub:</strong> <a href="https://github.com/whzzt" class="text-blue-600 hover:underline">github.com/your-github</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white rounded-t-lg shadow-md mt-8 p-4 text-center text-gray-500">
+        <p>This page is hosted on <a href="https://pages.github.com/" class="text-blue-600 hover:underline">GitHub Pages</a>.</p>
+    </footer>
+
+</body>
+</html>
